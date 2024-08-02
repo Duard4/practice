@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..400;1,300..400&display=swap');
+
 .cases {
-    background-color: blue;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    padding: 50px 28px 48px;
+}
+.cases-title {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.cases-subtitle {
+    font-size: 20px;
+    line-height: 32.95px;
+}
+
+.cases-text {
+    font-size: 18px;
+    margin-top: 34px;
+    line-height: 28.16px;
+}
+
+.cases-list {
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    max-width: calc(640px + 664px);
+}
+.cases-item {
+    width: 320px;
 }
