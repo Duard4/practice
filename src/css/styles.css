@@ -10,6 +10,9 @@
 @import url('./about.css');
 @import url('./cases.css');
 @import url('./blog.css');
+@import url('./team.css');
+@import url('./callback.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
