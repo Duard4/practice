@@ -2,3 +2,7 @@
   padding: 20px 0;
   background-color: aquamarine;
 }
+
+.header-nav {
+  display: flex;
+}
