@@ -1,40 +1,70 @@
-<section class="callback">
-  <div class="callback-section">
-    <img src="../img/callback-img.jpg" alt="man with laptop" />
-
-    <div class="callback-section-form">
-      <h2 class="callback-title">Request Callback</h2>
-      <form class="form">
-        <div class="form-input">
-          <label for="user-name" class="form-label">Name</label>
-          <div class="form-fild-wrap">
-            <input
-              type="text"
-              class="form-input"
-              name="user-name"
-              required
-              minlength="2"
-              id="user-name"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div class="form-input">
-            <label for="user-name" class="form-label">email</label>
-            <div class="form-fild-wrap">
-              <input
-                type="text"
-                class="form-input"
-                name="user-name"
-                required
-                minlength="2"
-                id="user-name"
-                placeholder="Enter your email"
-              />
-            </div>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/callback.css" />
+  </head>
+  <body>
+    <section class="callback">
+      <div class="callback-section">
+        <div class="callback-image-box">
+          <img
+            src="../img/callback-img.jpg"
+            alt="man with laptop"
+            class="callback-image"
+          />
         </div>
-        <button type="submit" class="send-btn hero-btn">Send</button>
-      </form>
-    </div>
-  </div>
-</section>
+
+        <div class="callback-section-form">
+          <h2 class="callback-title">Request Callback</h2>
+          <form class="form">
+            <div class="form-input-box">
+              <label for="user-name" class="form-label">Name</label>
+              <div class="form-fild-wrap">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="user-name"
+                  required
+                  minlength="2"
+                  id="user-name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-input-box">
+                <label for="user-name" class="form-label">email</label>
+                <div class="form-fild-wrap">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Enter email*"
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="send-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
