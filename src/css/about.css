@@ -1,3 +1,85 @@
-.about {
-  background-color: blueviolet;
+.body {
+  margin: 0px;
+}
+
+.section-about {
+  background-color: #FFFFFF;
+  width: 320px;
+  height: 684px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* < !---------MOBILE-----------> */
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 51px;
+  padding-right: 49px;
+}
+
+.icon-university {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11px;
+}
+
+.icon-book {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background: #28a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-icon {
+  fill: #FFFFFF;
+}
+
+.text-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 166%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.container-paragraph {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 77px;
+  margin-bottom: 17px;
+}
+
+.text-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #333;
+
+}
+
+.container-paragraph:last-child {
+  margin-bottom: 0px;
 }
