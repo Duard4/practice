@@ -3,10 +3,8 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,14 +13,7 @@
 }
 
 .body {
-  /* width: 320px; */
   margin: 0px;
-}
-
-.section-about {
-  background-color: #FFFFFF;
-  width: 320px;
-  height: 684px;
 }
 
 .visually-hidden {
@@ -39,20 +30,41 @@
 
 /* < !---------MOBILE-----------> */
 
-.container {
+.section-about {
+  background-color: #FFFFFF;
   padding-top: 30px;
   padding-bottom: 31px;
   padding-left: 51px;
   padding-right: 49px;
 }
 
-.icon-university {
+.container {
+  max-width: 220px;
+}
+
+.about-inner {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list {
+  margin-bottom: 17px;
+}
+
+.about-list:last-child {
+  margin-bottom: 0px;
+}
+
+.icon-university,
+.icon-book,
+.icon-pencil {
   display: flex;
   justify-content: center;
   margin-bottom: 11px;
 }
 
-.icon-book {
+.icon-icon {
   border-radius: 50%;
   width: 64px;
   height: 64px;
@@ -62,14 +74,13 @@
   justify-content: center;
 }
 
-.icon-icon {
-  fill: #FFFFFF;
-}
 
-.text-title {
+.text-title-banking,
+.text-title-manager,
+.text-title-tax {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 166%;
   text-align: center;
   color: #333;
@@ -77,28 +88,15 @@
   margin-top: 0px;
 }
 
-.container-paragraph {
-  display: flex;
-  justify-content: center;
-  width: 220px;
-  height: 77px;
-  margin-bottom: 17px;
-}
-
-.text-description {
+.text-banking,
+.text-manager,
+.text-tax {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 160%;
   text-align: center;
   color: #333;
-
-}
-
-.container-paragraph:last-child {
-  margin-bottom: 0px;
 }
 
 /* --------SECTION ABOUT (solutions)-------- */
@@ -138,11 +136,10 @@ screen and (min-resolution: 192dpi) {
     sans-serif;
   margin: 0px;
   margin-bottom: 5px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 166%;
   color: #fff;
-  max-width: 215px;
+  width: 215px;
 }
 
 .text-title-people {
@@ -164,12 +161,9 @@ screen and (min-resolution: 192dpi) {
   margin: 0px;
   font-family: "Open Sans",
     sans-serif;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 160%;
   color: #fff;
   margin-bottom: 14px;
-
 }
 
 .container-btn {
@@ -179,8 +173,6 @@ screen and (min-resolution: 192dpi) {
 
 .review-btn {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 160%;
   color: #fff;
   background: #28a745;
@@ -189,6 +181,132 @@ screen and (min-resolution: 192dpi) {
   width: 158px;
   height: 47px;
   cursor: pointer;
-
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.review-btn:hover {
+  background: #32ca55;
+}
+
+.review-btn:focus {
+  background: #28a745;
+}
+
+/* -------планшет------ */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .about-inner {
+    display: flex;
+  }
+
+  .section-about {
+    padding-top: 39px;
+    padding-bottom: 47px;
+    padding-left: 55px;
+    padding-right: 56px;
+  }
+
+  .icon-university {
+    margin-bottom: 15px;
+  }
+
+  .text-title {}
+
+  .about-list {
+    margin-bottom: 0px;
+  }
+
+  .text-banking,
+  .text-manager,
+  .text-tax {
+    width: 185px;
+    font-size: 20px;
+  }
+
+  .text-banking {
+    margin-right: 53px;
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .text-manager {
+    margin-right: 49px;
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .text-tax {
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .text-title-banking {
+    margin-right: 53px;
+  }
+
+  .text-title-manager {
+    margin-right: 49px;
+  }
+
+  .icon-university {
+    margin-right: 53px;
+  }
+
+  .icon-book {
+    margin-right: 49px;
+  }
+
+  /* < !-- ------------SECTION ABOUT (solutions)----------- --> */
+  .section-solutions {
+    width: 768px;
+    display: flex;
+  }
+
+  .solutions-image {
+    display: flex;
+    background-image: url(../img/img-people-tab.jpg);
+    height: 564px;
+    width: 384px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+    .solutions-image {
+      background-image: url(../img/img-people-tab2x.jpg);
+
+    }
+
+    .solutions-text {
+      padding-right: 39px;
+    }
+
+    .intro-text-title {
+      width: 316px;
+      height: 226px;
+    }
+
+    .text-title-people {
+      margin-bottom: 25px;
+    }
+
+    .intro-text-title {
+      width: 315px;
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 156%;
+    }
+
+    .intro-text {
+      width: 237px;
+      font-size: 20px;
+      line-height: 165%;
+    }
+
+    .review-btn {
+      font-size: 18px;
+      line-height: 156%;
+    }
