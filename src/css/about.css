@@ -12,6 +12,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .body {
   margin: 0px;
 }
@@ -31,24 +37,22 @@
 /* < !---------MOBILE-----------> */
 
 .section-about {
+  width: 320px;
   background-color: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 31px;
-  padding-left: 51px;
-  padding-right: 49px;
+
 }
 
-.container {
-  max-width: 220px;
+.container-lorem {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 31px;
+  width: 220px;
 }
 
-.about-inner {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+.about-inner {}
 
 .about-list {
+  max-width: 220px;
   margin-bottom: 17px;
 }
 
@@ -106,10 +110,10 @@
 }
 
 .solutions-image {
+  justify-content: start;
   width: 320px;
   height: 220px;
   background-image: url(../img/people-about-mob1x.jpg);
-  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
 }
@@ -193,120 +197,131 @@ screen and (min-resolution: 192dpi) {
 }
 
 /* -------планшет------ */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+}
 
-  .about-inner {
-    display: flex;
+/* @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
+}
 
-  .section-about {
-    padding-top: 39px;
-    padding-bottom: 47px;
-    padding-left: 55px;
-    padding-right: 56px;
-  }
+.about-inner {
+  display: flex;
+}
 
-  .icon-university {
-    margin-bottom: 15px;
-  }
 
-  .text-title {}
+.section-about {
+  padding-top: 39px;
+  padding-bottom: 47px;
+  padding-left: 55px;
+  padding-right: 56px;
+}
 
-  .about-list {
-    margin-bottom: 0px;
-  }
+.icon-university {
+  margin-bottom: 15px;
+}
 
-  .text-banking,
-  .text-manager,
-  .text-tax {
-    width: 185px;
-    font-size: 20px;
-  }
+.text-title {}
 
-  .text-banking {
-    margin-right: 53px;
-    font-size: 18px;
-    line-height: 156%;
-  }
+.about-list {
+  margin-bottom: 0px;
+}
 
-  .text-manager {
-    margin-right: 49px;
-    font-size: 18px;
-    line-height: 156%;
-  }
+.text-banking,
+.text-manager,
+.text-tax {
+  width: 185px;
+  font-size: 20px;
+}
 
-  .text-tax {
-    font-size: 18px;
-    line-height: 156%;
-  }
+.text-banking {
+  margin-right: 53px;
+  font-size: 18px;
+  line-height: 156%;
+}
 
-  .text-title-banking {
-    margin-right: 53px;
-  }
+.text-manager {
+  margin-right: 49px;
+  font-size: 18px;
+  line-height: 156%;
+}
 
-  .text-title-manager {
-    margin-right: 49px;
-  }
+.text-tax {
+  font-size: 18px;
+  line-height: 156%;
+}
 
-  .icon-university {
-    margin-right: 53px;
-  }
+.text-title-banking {
+  margin-right: 53px;
+}
 
-  .icon-book {
-    margin-right: 49px;
-  }
+.text-title-manager {
+  margin-right: 49px;
+}
 
-  /* < !-- ------------SECTION ABOUT (solutions)----------- --> */
-  .section-solutions {
-    width: 768px;
-    display: flex;
-  }
+.icon-university {
+  margin-right: 53px;
+}
 
+.icon-book {
+  margin-right: 49px;
+} */
+
+
+/* < !-- ------------SECTION ABOUT (solutions)----------- --> */
+/* .section-solutions {
+  width: 768px;
+  display: flex;
+}
+
+.solutions-image {
+  display: flex;
+  background-image: url(../img/img-people-tab.jpg);
+  height: 564px;
+  width: 384px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 2dppx),
+screen and (min-resolution: 192dpi) {
   .solutions-image {
-    display: flex;
-    background-image: url(../img/img-people-tab.jpg);
-    height: 564px;
-    width: 384px;
+    background-image: url(../img/img-people-tab2x.jpg);
+
   }
+}
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 2dppx),
-  screen and (min-resolution: 192dpi) {
-    .solutions-image {
-      background-image: url(../img/img-people-tab2x.jpg);
+.solutions-text {
+  padding-right: 39px;
+}
 
-    }
+.intro-text-title {
+  width: 316px;
+  height: 226px;
+}
 
-    .solutions-text {
-      padding-right: 39px;
-    }
+.text-title-people {
+  margin-bottom: 25px;
+}
 
-    .intro-text-title {
-      width: 316px;
-      height: 226px;
-    }
+.intro-text-title {
+  width: 315px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 156%;
+}
 
-    .text-title-people {
-      margin-bottom: 25px;
-    }
+.intro-text {
+  width: 237px;
+  font-size: 20px;
+  line-height: 165%;
+}
 
-    .intro-text-title {
-      width: 315px;
-      margin-bottom: 25px;
-      font-size: 18px;
-      line-height: 156%;
-    }
-
-    .intro-text {
-      width: 237px;
-      font-size: 20px;
-      line-height: 165%;
-    }
-
-    .review-btn {
-      font-size: 18px;
-      line-height: 156%;
-    }
+.review-btn {
+  font-size: 18px;
+  line-height: 156%;
+} */
