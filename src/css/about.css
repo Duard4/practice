@@ -36,17 +36,20 @@ ul {
 
 /* < !---------MOBILE-----------> */
 
+
 .section-about {
-  width: 320px;
+  max-width: 320px;
   background-color: #FFFFFF;
 
 }
 
 .container-lorem {
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 31px;
-  width: 220px;
+  /* margin: 0 auto; */
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 220px;
 }
 
 .about-inner {}
@@ -106,14 +109,14 @@ ul {
 /* --------SECTION ABOUT (solutions)-------- */
 
 .section-solutions {
-  width: 320px;
+  max-width: 320px;
 }
 
 .solutions-image {
   justify-content: start;
-  width: 320px;
+  min-width: 320px;
   height: 220px;
-  background-image: url(../img/people-about-mob1x.jpg);
+  background-image: url(/img/people-about-mob1x.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -122,14 +125,14 @@ ul {
 screen and (min-resolution: 2dppx),
 screen and (min-resolution: 192dpi) {
   .solutions-image {
-    background-image: url(../img/people-about-mob2x.jpg);
+    background-image: url(/img/people-about-mob2x.jpg);
 
   }
 }
 
 .solutions-text {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background: #28a745;
   padding: 30px;
 }
@@ -143,7 +146,7 @@ screen and (min-resolution: 192dpi) {
   font-size: 18px;
   line-height: 166%;
   color: #fff;
-  width: 215px;
+  max-width: 215px;
 }
 
 .text-title-people {
@@ -198,24 +201,73 @@ screen and (min-resolution: 192dpi) {
 
 /* -------планшет------ */
 
+
+
 @media screen and (min-width: 768px) {
-  .container {
+  .container-lorem {
     max-width: 768px;
   }
-}
 
-/* @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  .section-about {
+    min-width: 768px;
+    height: 923px;
   }
+
+  .container-general {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 100% */
+  }
+
+  .our-bottom-container {
+    display: flex;
+    max-width: 768px;
+    /* горизонтальное расположение */
+
+  }
+
+  .about-inner {
+    display: flex;
+    min-width: 768px;
+  }
+
+  .solutions-image {
+    justify-content: start;
+    background-image: url(/img/img-people-tab.jpg);
+    max-width: 384px;
+    min-height: 564px;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+    .solutions-image {
+      background-image: url(/img/img-people-tab2x.jpg);
+
+    }
+  }
+
+  .solutions-text {
+    max-width: 384px;
+    height: 564px;
+  }
+
+  .intro-text-title {
+    max-width: 315px;
+  }
+
+
 }
 
-.about-inner {
-  display: flex;
-}
 
 
-.section-about {
+
+
+/* .section-about {
+
   padding-top: 39px;
   padding-bottom: 47px;
   padding-left: 55px;
@@ -271,7 +323,6 @@ screen and (min-resolution: 192dpi) {
 .icon-book {
   margin-right: 49px;
 } */
-
 
 /* < !-- ------------SECTION ABOUT (solutions)----------- --> */
 /* .section-solutions {
